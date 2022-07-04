@@ -1,0 +1,237 @@
+/* Reponsive nav */
+.nav-bars-btn{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    display: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.nav_overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.nav_mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background: linear-gradient(80deg,#181733 0,#181733 18%,rgb(228 34 9 / 95%));
+    color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.25s;
+    
+}
+.nav-mobile-close{
+    width: 15px;
+    height: 15px;
+    color:rgb(235, 205, 205);
+    font-size: 1.6rem;
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    cursor: pointer;
+    opacity: 1;
+}
+.nav-mobile-close>i{
+    padding: 12px 0;
+}
+
+.nav-mobile-close:hover{
+    opacity: 0.6;
+}
+.nav-input{
+    display: none;
+}
+.nav-input:checked~.nav_overlay{
+    display: block;
+}
+.nav-input:checked~.nav_mobile{
+    transform: translateX(0);
+    opacity: 1;
+}
+/* tablet and mobile */
+@media (max-width:63.9375em){
+    .nav-bars-btn{
+        display: block;
+    }
+    .nav_pc{
+        display: none;
+    }
+    #nav{
+        margin-top: 32px;
+        margin-left: 16px;
+    }
+    #nav li{
+        display: block;
+    }
+    #footer .copyright a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+@media (max-width:25em){
+    .nav_mobile{
+        width:250px;
+    }
+}
+
+
+
+/* Reponsive img  */
+/* Pc */
+@media (min-width:70.25em) {
+    #content .member-imgs{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    #content .member-img {
+        max-width: 250px;
+        min-height: 180px;
+        border-radius: 25px;
+        
+    }
+}
+
+/* tablet */
+@media (min-width:46.25em) and (max-width:70.1875em) {
+    #content .member-imgs{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #content .member-img {
+        width: 80%;
+        height: 80%;
+        border-radius: 25px;
+        
+    }
+    .p-16{
+        padding:16px 0;
+    }
+    .modal-container .modal-img{
+        display: none;
+    }
+
+    .hlv-intro{
+        display: block;
+    }
+    
+    .hlv-img{
+        text-align: center;
+        margin: 16px 0;
+    }
+    .hlv-title{
+        margin-top: 20px;
+    }
+
+}
+/* mobile */
+@media (max-width:46.1875em) {
+    
+    #content .member-imgs{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #content .member-img {
+        width: 80%;
+        height: 80%;
+        border-radius: 25px;
+        
+    }
+    .p-16{
+        padding:16px 0;
+    }
+    .modal-container{
+        display: block;
+    }
+    .modal-container .modal-img{
+        display: none;
+    }
+    .introduce-member{
+        display: none;
+    }
+    /* HLv */
+    .hlv-intro{
+        display: block;
+    }
+    .hlv-maxim{
+        display: none;
+    }
+    .hlv-img{
+        text-align: center;
+        margin: 16px 0;
+    }
+    .img-pep{
+        width: 100%;
+    }
+    .number-matches{
+        display: none;
+    }
+    .hlv-title{
+        margin-top: 20px;
+    }
+
+    /*HLv-info  */
+    .sub-items{
+        flex: 100%;
+    }
+    .order-1{
+        order: 1;
+    }
+    .order-2{
+        order: 2;
+    }
+    .order-3{
+        order: 3;
+    }
+    .order-4{
+        order: 4;
+    }
+    .order-5{
+        order: 5;
+    }
+    .order-6{
+        order: 6;
+    }
+
+    /* hanh trinh vi dai an 6 */
+    .run-6{
+        display: none;
+    }
+    .mobile-run-6{
+        display: block;
+    }
+    
+    /* Tiki-Taka */
+    .text-tiki{
+        border-radius: 0px;
+    }
+    .video-tiki-taka{
+        width: 100%;
+    }
+
+    /* footer */
+    #footer .sosical-list{
+        flex-wrap: wrap;
+    }
+    .pd-lr-16{
+        padding: 0 16px;
+    }
+    
+}

@@ -1,0 +1,10 @@
+{
+    "editor.linkedEditing": true,
+    "git.alwaysShowStagedChangesResourceGroup": false,
+    "git.alwaysSignOff": false,
+    "git.branchRandomName.enable": false,
+    "git.detectSubmodules": true,
+    "git.confirmEmptyCommits": true,
+    "git.enableCommitSigning": false,
+    "git.enabled": false
+}
